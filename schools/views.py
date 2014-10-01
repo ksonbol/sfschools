@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import View, ListView, DetailView
 from schools.models import School
-from schools.forms import SchoolForm, SchoolFilter
+from schools.forms import SchoolFilter
 from django.views.generic.list import MultipleObjectMixin
 import json
 
