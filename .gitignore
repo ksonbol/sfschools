@@ -3,3 +3,4 @@ data
 *.pyc
 sf_guide/settings/development.py
 sf_guide/settings/test.py
+static
