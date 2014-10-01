@@ -16,6 +16,6 @@ ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = 'staticfiles'
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = False
 
