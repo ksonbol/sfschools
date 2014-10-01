@@ -1,6 +1,6 @@
 env
 data
 *.pyc
-sf_guide/setttings/development.py
-sf_guide/setttings/test.py
-sf_guide/setttings/production.py
+sf_guide/settings/development.py
+sf_guide/settings/test.py
+sf_guide/settings/production.py
