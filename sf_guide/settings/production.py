@@ -15,3 +15,6 @@ ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = 'static'
 
+DEBUG = False
+TEMPLATE_DEBUG = False
+
