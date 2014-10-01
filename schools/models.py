@@ -7,7 +7,6 @@ class School(models.Model):
     school_type = models.CharField(max_length=255, blank=True)
     garden = models.NullBooleanField()
     enroll_cnt = models.IntegerField(null=True, blank=True)
-    objects = SchoolManager()
 
     def __unicode__(self):
         return self.name
