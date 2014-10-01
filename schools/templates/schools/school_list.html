@@ -1,0 +1,41 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+<h2>Schools</h2>
+<form id="schoolForm" method="get" action="{% url 'schools:filter' %}" role="form">
+  <div class="form-group">
+    <label for="id_school_type" class="control-label">School Type</label>
+    <select name="school_type" id="id_school_type" class="form-control">
+      <option></option>
+      <option value="Elem">Elem</option>
+      <option value="Middle">Middle</option>
+      <option value="Elem/Middle">Elem/Middle</option>
+      <option value="High">High</option>
+      <option value="Middle/High">Middle/High</option>
+    </select>
+  </div>
+  <div class="from-group">
+    <label for="id_name" class="control-label">Name</label>
+    <input type="text" name="name__icontains" class="form-control" />
+  </div>
+  <div class="checkbox">
+    <label><input name="garden" type="checkbox" value="True" />With Garden</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Filter</button>
+</form>
+<br />
+<ul id="school_list">
+</ul>
+<script>
+  $(document).ready(function() {
+    var options = {
+      success: listSchools
+    };
+    $('#schoolForm').ajaxForm(options);
+    $('#schoolForm').submit();
+  });
+  function listSchools(responseText, statusText, xhr, $form) { 
+    $('#school_list').empty();
+    $('#school_list').append(responseText);
+  }
+</script>
+{% endblock %}

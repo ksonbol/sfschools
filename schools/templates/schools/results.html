@@ -1,0 +1,34 @@
+{% if school_list %}
+  {% for school in school_list %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>{{ school.name }}</strong></h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          <li><strong>Enrollment Count: </strong>{{ school.enroll_cnt }}</li>
+          <li><strong>School Type: </strong>{{ school.school_type }}</li>
+          <li><strong>Address: </strong>{{ school.address }}</li>
+          <li><strong>Has Garden: </strong>{{ school.garden }}</li>
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+  {% if is_paginated %}
+    <div class="pagination">
+        <span class="page-links">
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+            {% endif %}
+            <span class="page-current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">next</a>
+            {% endif %}
+        </span>
+    </div>
+  {% endif %}
+{% else %}
+  <h3> Sorry! no, schools matched.</h3>
+{% endif %}
