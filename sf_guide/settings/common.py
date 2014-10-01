@@ -56,6 +56,7 @@ INSTALLED_APPS = (
     'django_extensions',
     'simplejson',
     'django_filters',
+    'getenv',
     'schools',
 )
 

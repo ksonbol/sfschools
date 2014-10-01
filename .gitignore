@@ -3,4 +3,3 @@ data
 *.pyc
 sf_guide/settings/development.py
 sf_guide/settings/test.py
-sf_guide/settings/production.py
