@@ -14,8 +14,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
 
-STATIC_ROOT = 'static'
+STATIC_ROOT = 'staticfiles'
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = False
 
