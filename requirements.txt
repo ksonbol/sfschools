@@ -1,0 +1,10 @@
+Django==1.7
+Werkzeug==0.9.6
+argparse==1.2.1
+django-dajaxice==0.6
+django-extensions==1.4.0
+django-filter==0.8
+psycopg2==2.5.4
+simplejson==3.6.3
+six==1.8.0
+wsgiref==0.1.2
