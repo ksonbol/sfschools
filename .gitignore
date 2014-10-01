@@ -3,6 +3,4 @@ data
 *.pyc
 sf_guide/setttings/development.py
 sf_guide/setttings/test.py
-requirements/development.txt
-requirements/test.txt
-
+sf_guide/setttings/production.py
