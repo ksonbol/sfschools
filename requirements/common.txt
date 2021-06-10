@@ -1,4 +1,4 @@
-Django==1.7
+Django==2.2.24
 Werkzeug==0.9.6
 argparse==1.2.1
 django-dajaxice==0.6
